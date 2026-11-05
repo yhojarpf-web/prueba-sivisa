@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIVISA · Red Integrada de Salud Chachapoyas</title>
+<meta name="description" content="Portal informativo SIVISA – Sistema de Información de Vigilancia Sanitaria de la Red Integrada de Salud Chachapoyas.">
+<link rel="icon" href="assets/logos/red_salud.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/sivisa.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="top-logos" href="./" id="logos-cabecera" aria-label="Inicio"></a>
+    <nav class="top-nav" aria-label="Principal">
+      <a href="#portales">Portales</a>
+      <a href="#publicaciones">Publicaciones</a>
+      <a href="#enlaces">Enlaces</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-foto" aria-hidden="true"></div>
+  <div class="hero-in">
+    <p class="hero-kicker" id="institucion"></p>
+    <span class="hero-tag" id="etiqueta"></span>
+    <h1 class="hero-title" id="titulo"></h1>
+    <p class="hero-sub" id="subtitulo"></p>
+    <div class="pills" id="enlaces" aria-label="Enlaces de interés"></div>
+  </div>
+  <div class="hero-datos">
+    <div class="hero-datos-in" id="hero-datos"></div>
+  </div>
+</section>
+
+<div class="layout">
+  <main id="portales">
+    <div class="cards" id="cards"></div>
+    <div class="camp-wrap" id="campanas"></div>
+
+    <section class="recientes" id="publicaciones">
+      <div class="recientes-cab">
+        <div><h2>Boletines, salas y documentos recientes</h2><p>Publicaciones más recientes de los portales de SIVISA.</p></div>
+        <a class="btn-sec" href="epidemiologia/index.html">Ver todas →</a>
+      </div>
+      <div id="lista-recientes"></div>
+    </section>
+  </main>
+
+  <aside class="lateral" id="contacto" aria-label="Contacto">
+    <div class="autoridades" id="autoridades">
+      <div id="lista-autoridades"></div>
+    </div>
+    <div class="perfil">
+      <span class="perfil-label">Contacto</span>
+      <div class="perfil-fila">
+        <div class="perfil-foto" id="perfil-foto"></div>
+        <div class="perfil-txt">
+          <p class="perfil-nombre" id="perfil-nombre"></p>
+          <p class="perfil-cargo" id="perfil-cargo"></p>
+          <p class="perfil-area" id="perfil-area"></p>
+        </div>
+      </div>
+      <a class="perfil-correo" id="perfil-correo"></a>
+    </div>
+
+  </aside>
+</div>
+
+<div class="info" id="info"></div>
+
+<footer class="pie">
+  <div class="pie-logos" id="logos-pie"></div>
+  <p id="pie-texto"></p>
+</footer>
+
+<script src="data/sitio.js"></script>
+<script src="epidemiologia/data/catalogo.js"></script>
+<script src="epidemiologia/data/semanales.js"></script>
+<script src="epidemiologia/data/secciones.js"></script>
+<script src="assets/publicaciones.js"></script>
+<script src="assets/info.js"></script>
+<script src="data/campanas.js"></script>
+<script src="data/alertas.js"></script>
+<script src="data/situacion.js"></script>
+<script src="assets/campanas.js"></script>
+<script src="assets/sivisa.js"></script>
+<script>Info.montar(document.getElementById("info"));
+Campanas.montar(document.getElementById("campanas"), { portal: "sivisa", base: "" });</script>
+</body>
+</html>

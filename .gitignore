@@ -1,0 +1,30 @@
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+data/*.bak
+Thumbs.db
+desktop.ini
+~$*
+# Bases nominales: nunca publicar
+*.xlsx
+*.xls
+Individual/
+Edas/
+Iras/
+Febril/
+*.csv
+!epidemiologia/data/*.csv
+bases/
+maestros/
+
+# Excepción: las plantillas de unidades de notificación sí se publican
+!epidemiologia/data/unidades/*.xlsx
+# La capa original de QGIS (con notas internas de validación) no se publica; solo unidades.js
+epidemiologia/data/unidades/*.geojson
+
+# Excepción: los Excel mensuales de calidad del agua (datos agregados por sistema, sin datos personales) sí se suben
+!salud-ambiental/datos/agua/*.xlsx
+!salud-ambiental/datos/agua/*/*.xlsx
+!salud-ambiental/datos/vectores/*/*.xlsx
+!salud-ambiental/datos/vectores/*/*/*.xlsx
