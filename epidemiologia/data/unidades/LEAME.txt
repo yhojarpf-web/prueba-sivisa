@@ -1,0 +1,10 @@
+Carpeta de Unidades de notificación
+
+unidades.geojson  -> capa exportada desde QGIS (GeoJSON, EPSG:4326). Reemplácela con el mismo nombre
+                     cuando actualice o valide coordenadas y ejecute source("generar_portal.R").
+unidades.js       -> generado automáticamente; solo publica los campos útiles
+                     (sin las columnas internas de auditoría o validación).
+indicadores_notificacion.xlsx -> indicadores de monitoreo de la notificación por establecimiento.
+
+UNIDADES_NOTIF.xlsx -> unidades notificantes (UN) e informantes (UI) por microred. Reemplácelo con el mismo nombre
+                     y al publicar se actualizan solas la tabla y las cifras (herramientas/unidades_notificacion.py).

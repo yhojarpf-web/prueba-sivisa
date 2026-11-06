@@ -1,0 +1,34 @@
+orden,id,titulo,tipo,icono,descripcion,enlace,padre,modulos
+1,inicio,Inicio,inicio,inicio,Resumen del portal y últimas publicaciones.,,,
+2,nosotros,Nosotros,pagina,equipo,"Misión, visión, funciones y equipo técnico de la Oficina de Epidemiología.",,,
+3,unidades,Sistemas de vigilancia,dashboard,lupa,"Tableros de la Red Integrada de Salud Chachapoyas por sistema de vigilancia: tendencia semanal, microredes, establecimientos y características de los casos.",,,"eda,ira,feb,leish,dengue,leptospirosis,varicela,lesiones,diabetes,violencia,mnp"
+4,metaxenicas,Metaxénicas,dashboard,lupa,"Dengue, malaria, leishmaniasis, enfermedad de Carrión y otras.",,unidades,"leish,dengue"
+5,febriles,Síndrome febril,dashboard,lupa,Vigilancia del síndrome febril notificado semanalmente por los establecimientos de la Red.,,unidades,feb
+6,zoonosis,Zoonosis,dashboard,lupa,"Rabia, leptospirosis, ofidismo, loxoscelismo y otras.",,unidades,leptospirosis
+7,inmunoprevenibles,Enfermedades prevenibles por vacunas,dashboard,lupa,"Sarampión, rubéola, tos ferina, parálisis flácida aguda y otras.",,unidades,varicela
+8,ira-eda,"IRA, EDA y neumonías",dashboard,lupa,"Infecciones respiratorias, enfermedades diarreicas y neumonías.",,unidades,"eda,ira"
+9,no-transmisibles,No transmisibles,dashboard,lupa,"Cáncer, diabetes, enfermedad renal crónica, lesiones por accidentes de tránsito e intoxicaciones.",,unidades,"lesiones,diabetes"
+10,salud-mental,Salud mental,dashboard,lupa,"Episodio depresivo moderado y grave, primer episodio psicótico e intento de suicidio.",,unidades,
+11,violencia,Violencia familiar,dashboard,lupa,Casos de violencia familiar atendidos y notificados por los establecimientos de la Red.,,unidades,violencia
+12,materno-perinatal,Materno perinatal,dashboard,lupa,"Muerte materna, morbilidad materna extrema y muerte fetal y neonatal.",,unidades,mnp
+13,tbc-vih,"TBC, VIH e ITS",dashboard,lupa,"Tuberculosis, VIH, infecciones de transmisión sexual y hepatitis B.",,unidades,
+14,unidades-notificacion,Unidades de notificación,mapa,mapa,"Microredes y establecimientos cabecera de la Red: ubicación, establecimientos y unidades notificantes e informantes por microred.",,,
+15,indicadores-notificacion,Indicadores de notificación,pagina,grafico,"Oportunidad, cobertura, calidad del dato y retroalimentación de la notificación por microred y establecimiento.",,,
+16,sala-situacion,Sala situacional de salud,documentos,sala,Situación epidemiológica de la Red por enfermedad o evento.,,,
+17,caracterizacion,Caracterización de la Red,territorio,mapa,"Jurisdicción de la Red en el departamento de Amazonas, población 2026 y pirámide poblacional por microred y distrito.",,sala-situacion,
+18,sala-estatica,Sala situacional semanal,semanas,sala,"Sala situacional general de la Red, publicada cada semana en PDF. Elija la semana epidemiológica.",,sala-situacion,
+19,dashboard,Sala dinámica,dashboard,grafico,Resumen semanal de la Red: situación de los principales eventos y alertas. Pulse una tarjeta para ver el detalle en Sistemas de vigilancia.,,sala-situacion,"eda,ira,feb,leish,dengue,leptospirosis,varicela,lesiones,diabetes,violencia,mnp"
+20,boletines,Boletines epidemiológicos,semanas,boletin,Boletín epidemiológico semanal de la Red. Elija la semana epidemiológica.,,,
+21,brotes,Brotes,brotes,brote,"Brotes, epizootias y EVISAP en la jurisdicción de la Red: ubicación, estado e informes. Se actualiza cada semana.",,,
+22,definiciones,Definiciones de caso,documentos,libro,"Definiciones de caso sospechoso, probable y confirmado por daño.",,,
+23,algoritmos,Algoritmos de decisión,algoritmos,algoritmo,"Algoritmos operativos interactivos por enfermedad: definición de caso, notificación, muestras, acciones y clasificación.",,,
+24,reportes,Reportes,documentos,reporte,Reportes epidemiológicos de la Oficina de Epidemiología. El más reciente aparece primero.,,,
+25,alertas,Alertas epidemiológicas,documentos,alerta,"Alertas epidemiológicas del CDC, la DIRESA y la Red. La más reciente aparece primero.",,,
+26,comunicados,Comunicados,documentos,documento,Comunicados de la Oficina de Epidemiología y de la Red. El más reciente aparece primero.,,,
+27,mapa-epidemiologico,Mapa epidemiológico,mapaepi,mapa,"Situación epidemiológica de la jurisdicción por distrito y localidad: eventos, brotes activos y tendencias.",,,
+28,fichas,Fichas epidemiológicas,documentos,ficha,Fichas de investigación epidemiológica según el tipo de notificación.,,,
+29,fichas-inmediata,Notificación inmediata,documentos,ficha,Fichas de notificación inmediata (menos de 24 horas).,,fichas,
+30,fichas-semanal,Notificación semanal,documentos,ficha,Fichas de notificación semanal.,,fichas,
+31,fichas-mensual,Notificación mensual,documentos,ficha,Fichas de notificación mensual.,,fichas,
+32,normas,Directivas y normas,documentos,norma,"Directivas, normas técnicas, resoluciones y documentos normativos de vigilancia epidemiológica. El más reciente aparece primero.",,,
+33,calendario,Calendario epidemiológico,calendario,calendario,"Semanas epidemiológicas del año: fechas de inicio y fin, y semana actual.",,,

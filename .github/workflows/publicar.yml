@@ -1,0 +1,41 @@
+# Publica el sitio en GitHub Pages cada vez que se sube algo (por GitHub Desktop o desde github.com).
+# Antes de publicar, revisa las carpetas de boletines y salas por semana y actualiza la lista.
+# Requisito (una sola vez): Settings → Pages → Build and deployment → Source: "GitHub Actions".
+name: Publicar SIVISA
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Actualizar lista de boletines y salas por semana
+        run: python3 epidemiologia/herramientas/documentos_semanales.py
+      - name: Actualizar datos de calidad del agua (Salud Ambiental)
+        run: |
+          pip install --quiet openpyxl
+          python3 salud-ambiental/herramientas/preparar_agua.py
+          python3 salud-ambiental/herramientas/preparar_vectores.py
+          python3 epidemiologia/herramientas/unidades_notificacion.py
+      - name: Actualizar la barra de situación actual
+        run: python3 herramientas/situacion.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deploy
+        uses: actions/deploy-pages@v4

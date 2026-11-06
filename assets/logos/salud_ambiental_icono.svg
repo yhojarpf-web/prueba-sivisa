@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Salud Ambiental">
+  <circle cx="200" cy="200" r="190" fill="#ffffff" stroke="#003b49" stroke-width="12"/>
+  <circle cx="200" cy="200" r="168" fill="none" stroke="#9acd32" stroke-width="4"/>
+  <g transform="translate(200 175) scale(0.78) translate(-200 -190)">
+    <path d="M200 70 C200 70 120 165 120 215 a80 80 0 0 0 160 0 C280 165 200 70 200 70Z" fill="#003b49"/>
+    <path d="M160 245 C160 190 205 165 245 168 C248 215 215 255 165 252Z" fill="#9acd32"/>
+    <path d="M168 248 C190 222 210 205 238 178" stroke="#003b49" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+  <path d="M150 272 q25 -13 50 0 t50 0" stroke="#9acd32" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <text x="200" y="318" text-anchor="middle" font-family="Nunito, Arial, sans-serif" font-weight="800" font-size="21" letter-spacing="1" fill="#003b49">SALUD AMBIENTAL</text>
+</svg>

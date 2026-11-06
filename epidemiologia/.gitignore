@@ -1,0 +1,14 @@
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+data/*.bak
+Thumbs.db
+desktop.ini
+~$*
+# Bases nominales: nunca publicar
+*.xlsx
+Individual/
+Edas/
+Iras/
+Febril/
